@@ -32,10 +32,11 @@ github_username:  piepor
 
 # Build settings
 #theme: minima
-theme: minimal-mistakes-jekyll
+remote_theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "contrast"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 defaults:
   #posts
