@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Excuse me?
+title: Just another blog
+subtitle: Version 0.1
 email: pietro.portolani@cazzieammazzi.it
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -27,12 +28,38 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://piepor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  piepor
 
 # Build settings
-theme: minima
+#theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "contrast"
 plugins:
   - jekyll-feed
+
+defaults:
+  #posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
+      author_profile: true
+      share: true
+
+# hide atom feed
+atom_feed:
+  hide: true
+
+# enable search
+search: true
+
+# author side bar
+author: 
+  name: "Pietro Portolani"
+  bio: "Naturally attracted by *complex simplicity*."
+  location: "Milano, Italy"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
